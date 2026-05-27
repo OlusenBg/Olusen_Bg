@@ -67,48 +67,86 @@
       </div>
       <div class="mockup-body">
         <div class="mockup-nav-bar">
-          <span class="mockup-logo">modrift</span>
+          <span class="mockup-logo" style="display:flex;align-items:center;gap:8px">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 14L7 4l4 6 3-4 2 8" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Modrift
+          </span>
           <div class="mockup-nav-items">
             <span class="mockup-nav-item">Features</span>
-            <span class="mockup-nav-item">Games</span>
             <span class="mockup-nav-item">Docs</span>
-            <span class="mockup-nav-item" style="color:var(--accent-primary)">Sign In</span>
+            <span class="mockup-nav-item">Pricing</span>
+            <span class="mockup-nav-item">GitHub</span>
           </div>
         </div>
-        <div class="mockup-hero-text">Your mods.<br>Conflict-free. Shipped.</div>
-        <div class="mockup-sub">Cross-game mod development, directly in your browser. No local setup. No friction.</div>
-        <div>
-          <span class="mockup-btn">Start Building →</span>
+        <!-- NOW IN EARLY ACCESS badge -->
+        <div style="text-align:center;margin-bottom:28px">
+          <span style="display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border:1px solid rgba(124,58,237,0.3);border-radius:999px;font-size:11px;font-family:'JetBrains Mono',monospace;color:var(--text-muted);letter-spacing:0.08em">
+            <span style="width:6px;height:6px;background:var(--accent-primary);border-radius:50%;display:inline-block"></span>
+            NOW IN EARLY ACCESS
+          </span>
+        </div>
+        <div class="mockup-hero-text" style="text-align:center">Your mods.<br>Conflict-free. Shipped.</div>
+        <div class="mockup-sub" style="text-align:center;max-width:460px;margin:8px auto 20px">AI-powered conflict detection and one-click CI/CD for game modders and mod developers.</div>
+        <!-- Stats strip -->
+        <div style="display:flex;justify-content:center;gap:36px;margin-bottom:24px;flex-wrap:wrap">
+          <div style="text-align:center">
+            <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:var(--accent-primary)">12k+</div>
+            <div style="font-size:11px;color:var(--text-muted);font-family:'JetBrains Mono',monospace">Mods analysed</div>
+          </div>
+          <div style="text-align:center">
+            <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:var(--accent-primary)">98%</div>
+            <div style="font-size:11px;color:var(--text-muted);font-family:'JetBrains Mono',monospace">Conflict accuracy</div>
+          </div>
+          <div style="text-align:center">
+            <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:18px;color:var(--accent-primary)">1-click</div>
+            <div style="font-size:11px;color:var(--text-muted);font-family:'JetBrains Mono',monospace">Ship to Nexus</div>
+          </div>
+        </div>
+        <!-- Conflict scan terminal -->
+        <div style="background:#06060f;border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:16px 20px;max-width:480px;margin:0 auto;font-family:'JetBrains Mono',monospace;font-size:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;color:var(--text-muted)">
+            <span>Conflict Scan — Skyrim SE</span>
+            <span style="color:#4ade80;font-size:11px">● Live</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04)">
+            <span style="color:#4ade80">✓ SkyUI</span><span style="color:var(--text-muted)">v5.2</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04)">
+            <span style="color:#4ade80">✓ USSEP</span><span style="color:var(--text-muted)">v4.2.9</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;padding:6px 0">
+            <span style="color:#4ade80">✓ Immersive Armors</span><span style="color:var(--text-muted)">v8.1</span>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Description -->
     <div class="desc-section">
-      <h2 class="fade-up">The problem with modding</h2>
-      <p class="fade-up delay-1">Every game has a different modding setup. Minecraft wants Java and Gradle. Skyrim wants the Creation Kit. Cyberpunk has something else. Before you write any actual mod code, you've usually spent an hour fighting your environment.</p>
-      <p class="fade-up delay-2">modrift tries to fix that. You open a browser tab, pick your game, and start writing. The AI assistant (Claude API) helps with game-specific APIs and patterns. Clerk handles auth, Neon handles the database, Cloudflare Workers runs the backend.</p>
-      <p class="fade-up delay-3">It's still in early access. There's a lot left to build.</p>
+      <h2 class="fade-up">What modrift actually does</h2>
+      <p class="fade-up delay-1">If you've ever modded a game with a big load order, you know the frustration: mods conflict with each other in ways that are hard to diagnose. Something breaks, you don't know what, and tracking it down takes longer than playing the game.</p>
+      <p class="fade-up delay-2">modrift is an AI-powered conflict detection and CI/CD platform for mod developers. It scans your mod list, identifies conflicts, and gives you one-click tools to ship to Nexus Mods. The AI assistant (Claude API) helps understand what's actually conflicting and why. Cloudflare Workers runs the backend, Neon handles the data, Clerk handles auth.</p>
+      <p class="fade-up delay-3">Still in early access. The core conflict detection works — the rest is being built around it.</p>
     </div>
 
     <!-- Features -->
     <h2 class="section-heading fade-up">Key features</h2>
     <div class="features-grid">
       <div class="feature-card fade-up delay-1">
-        <div class="feature-card-title">AI Coding Assistant</div>
-        <p>Powered by the Claude API. It knows the modding APIs for each supported game and helps you write correct, idiomatic mod code — fast.</p>
+        <div class="feature-card-title">AI conflict detection</div>
+        <p>Scans your mod load order and uses Claude to identify conflicts, explain what's clashing, and suggest fixes. Not just a red flag — an actual diagnosis.</p>
       </div>
       <div class="feature-card fade-up delay-2">
-        <div class="feature-card-title">Cross-game support</div>
-        <p>Minecraft, Skyrim, Cyberpunk 2077, Terraria, and more. One platform, consistent workflow across every game you want to mod.</p>
+        <div class="feature-card-title">One-click CI/CD</div>
+        <p>Ship directly to Nexus Mods in one click. Automated pipeline handles packaging, versioning, and upload so you can focus on the mod itself.</p>
       </div>
       <div class="feature-card fade-up delay-1">
-        <div class="feature-card-title">Browser-based editor</div>
-        <p>No local setup. Open modrift.dev, sign in, and build. Your mods live in the cloud and sync across devices.</p>
+        <div class="feature-card-title">Cross-game support</div>
+        <p>Skyrim, Minecraft, and others. One platform, same workflow regardless of which game you're modding.</p>
       </div>
       <div class="feature-card fade-up delay-2">
         <div class="feature-card-title">Cloudflare-powered backend</div>
-        <p>Cloudflare Workers and Pages keep everything fast and at the edge. Neon DB handles persistence. Clerk manages auth end-to-end.</p>
+        <p>Cloudflare Workers at the edge, Neon DB for persistence, Clerk for auth. Fast and solid infrastructure for a platform still in early access.</p>
       </div>
     </div>
 
