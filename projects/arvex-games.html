@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arvex Games — Yahia Bouabid</title>
+  <meta name="description" content="Arvex Games — my most ambitious project. A full ad-free web gaming platform built from zero web knowledge." />
+  <meta property="og:title" content="Arvex Games — Yahia Bouabid" />
+  <meta property="og:description" content="My most ambitious project. Built from zero web knowledge. And it worked." />
+  <meta property="og:url" content="https://olusenbg.github.io/Olusen_Bg/projects/arvex-games.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23080810'/><text y='.9em' font-size='60' font-family='sans-serif' font-weight='900' fill='%237c3aed' x='8'>YB</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <style>
+    .project-hero-bg {
+      background: radial-gradient(ellipse at 50% 0%, rgba(6,182,212,0.15), transparent 60%) !important;
+    }
+    .project-hero-title {
+      background: linear-gradient(135deg, var(--accent-secondary), #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .feature-card:hover {
+      border-color: rgba(6,182,212,0.3);
+    }
+  </style>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="nav-logo"><span>YB</span></a>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../projects/">Projects</a></li>
+      <li><a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../">Home</a>
+  <a href="../projects/">Projects</a>
+  <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a href="../#contact">Contact</a>
+</div>
+
+<!-- PROJECT HERO -->
+<div class="project-hero">
+  <div class="project-hero-bg"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div style="margin-bottom:20px" class="fade-up">
+      <a href="../projects/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-family:'JetBrains Mono',monospace;transition:color 0.2s" onmouseover="this.style.color='var(--accent-secondary)'" onmouseout="this.style.color='var(--text-muted)'">← All Projects</a>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:16px" class="fade-up">
+      <span class="badge badge-discontinued">● Discontinued</span>
+      <span class="mono" style="font-size:12px;color:var(--text-muted)">ArvexGames.com — Archived</span>
+    </div>
+    <h1 class="project-hero-title fade-up delay-1">Arvex Games</h1>
+    <p class="project-hero-tagline fade-up delay-2">My most ambitious project. Built from zero web knowledge. And it worked.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <!-- Description -->
+    <div class="desc-section">
+      <h2 class="fade-up">A full platform. Built by a kid who didn't know web dev yet.</h2>
+      <p class="fade-up delay-1">Arvex Games was a full ad-free web gaming platform — ArvexGames.com — launched in 9th grade. I had no prior web development experience. No tutorials for this specific thing. Just a goal and the willingness to break things until they worked.</p>
+      <p class="fade-up delay-2">The platform featured curated browser games — ULTRAKILL, PolyTrack, Hypersomnia, and more — alongside a full user account system with profiles, a virtual coin economy with daily streaks, leaderboards, progression systems, social features (friends, chat), and a developer submission program where indie game creators could submit their games for hosting.</p>
+      <p class="fade-up delay-3">No frameworks handed me these features. I learned hosting, domains, auth systems, virtual economies, moderation tools, Cloudflare R2 buckets, and TypeScript by building them.</p>
+    </div>
+
+    <!-- Features -->
+    <h2 class="section-heading fade-up">What was built</h2>
+    <div class="features-grid">
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-card-title" style="color:var(--accent-secondary)">Virtual Coin Economy</div>
+        <p>Daily streaks, earned currency, and progression systems. Users had real reasons to come back — and the system held up.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-card-title" style="color:var(--accent-secondary)">Full Auth System</div>
+        <p>User accounts, profiles, sessions. Built without a framework spoon-feeding me the implementation. Every bug taught me something.</p>
+      </div>
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-card-title" style="color:var(--accent-secondary)">Social Features</div>
+        <p>Friends, chat, leaderboards. Not just a static game list — an actual community platform that people could use together.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-card-title" style="color:var(--accent-secondary)">Dev Submission Program</div>
+        <p>Indie developers could submit their games for hosting on the platform. Moderation tools, review process, Cloudflare R2 storage.</p>
+      </div>
+    </div>
+
+    <!-- Personal reflection -->
+    <div style="padding:48px;background:var(--bg-card);border:1px solid var(--border);border-left:4px solid var(--accent-secondary);border-radius:var(--radius);margin:60px 0;" class="fade-up">
+      <h3 style="font-family:'Syne',sans-serif;font-size:20px;color:var(--accent-secondary);margin-bottom:20px">// WHAT I LEARNED</h3>
+      <p style="font-size:17px;line-height:1.8;color:rgba(240,240,248,0.8);">"I started this with zero knowledge of web development. No frameworks, no tutorials, just a goal and a willingness to break things until they worked. Arvex Games taught me more than any course ever could."</p>
+      <p style="margin-top:16px;font-size:15px;color:var(--text-muted)">It's discontinued now, for personal reasons. But it remains my most complete platform build — and the thing that proved to me I could teach myself anything.</p>
+    </div>
+
+    <!-- Tech Stack -->
+    <div style="margin: 60px 0" class="fade-up">
+      <span class="section-label">// TECH STACK</span>
+      <div class="tags" style="margin-top: 16px">
+        <span class="tag">TypeScript</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">Netlify</span>
+        <span class="tag">Vercel</span>
+        <span class="tag">Cloudflare</span>
+        <span class="tag">Cloudflare R2</span>
+        <span class="tag">Full auth system</span>
+      </div>
+    </div>
+
+    <!-- Related -->
+    <div class="related-section fade-up">
+      <span class="section-label">// RELATED PROJECTS</span>
+      <p style="color:var(--text-muted);font-size:15px;margin-bottom:20px">Arvex Games led directly to modrift — the same ambition, with everything I learned from building a platform from scratch.</p>
+      <div class="related-links">
+        <a href="modrift.html" class="related-link">→ modrift</a>
+        <a href="alloy-editor.html" class="related-link">→ Alloy Editor</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">Yahia Bouabid — Built from scratch, shipped with passion. © 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:yahiabouabid@gmail.com">Email</a>
+        <a href="https://modrift.dev" target="_blank" rel="noopener noreferrer">modrift.dev</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

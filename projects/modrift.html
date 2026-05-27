@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>modrift — Yahia Bouabid</title>
+  <meta name="description" content="modrift.dev — cross-game mod development platform. Build mods for any game directly in the browser." />
+  <meta property="og:title" content="modrift — Yahia Bouabid" />
+  <meta property="og:description" content="Build mods. Any game. No friction." />
+  <meta property="og:url" content="https://olusenbg.github.io/Olusen_Bg/projects/modrift.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23080810'/><text y='.9em' font-size='60' font-family='sans-serif' font-weight='900' fill='%237c3aed' x='8'>YB</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="nav-logo"><span>YB</span></a>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../projects/">Projects</a></li>
+      <li><a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../">Home</a>
+  <a href="../projects/">Projects</a>
+  <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a href="../#contact">Contact</a>
+</div>
+
+<!-- PROJECT HERO -->
+<div class="project-hero">
+  <div class="project-hero-bg"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div style="margin-bottom:20px" class="fade-up">
+      <a href="../projects/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-family:'JetBrains Mono',monospace;transition:color 0.2s" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">← All Projects</a>
+    </div>
+    <span class="badge badge-active fade-up">● Active — Early Access</span>
+    <h1 class="project-hero-title fade-up delay-1">modrift</h1>
+    <p class="project-hero-tagline fade-up delay-2">Build mods. Any game. No friction.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap" class="fade-up delay-3">
+      <a href="https://modrift.dev" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit modrift.dev ↗</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <!-- Mockup UI -->
+    <div class="mockup fade-up">
+      <div class="mockup-bar">
+        <div class="mockup-dot" style="background:#ef4444"></div>
+        <div class="mockup-dot" style="background:#f59e0b"></div>
+        <div class="mockup-dot" style="background:#22c55e"></div>
+        <div class="mockup-url">modrift.dev</div>
+      </div>
+      <div class="mockup-body">
+        <div class="mockup-nav-bar">
+          <span class="mockup-logo">modrift</span>
+          <div class="mockup-nav-items">
+            <span class="mockup-nav-item">Features</span>
+            <span class="mockup-nav-item">Games</span>
+            <span class="mockup-nav-item">Docs</span>
+            <span class="mockup-nav-item" style="color:var(--accent-primary)">Sign In</span>
+          </div>
+        </div>
+        <div class="mockup-hero-text">Your mods.<br>Conflict-free. Shipped.</div>
+        <div class="mockup-sub">Cross-game mod development, directly in your browser. No local setup. No friction.</div>
+        <div>
+          <span class="mockup-btn">Start Building →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="desc-section">
+      <h2 class="fade-up">The problem with modding</h2>
+      <p class="fade-up delay-1">Every game has its own modding ecosystem. Different tools, different setups, different ways things break. Minecraft wants Java and Gradle. Skyrim wants the Creation Kit. Cyberpunk 2077 wants something else entirely. Before you've written a single line of mod logic, you've already fought a dozen install issues.</p>
+      <p class="fade-up delay-2">modrift flips this. Instead of fighting your local environment, you open a browser tab and start building. The platform handles the context — which game you're targeting, which APIs exist, which patterns work. The AI coding assistant (powered by Claude) fills in the gaps. Clerk handles auth so your mods are tied to your account. Neon manages the database. Cloudflare Workers runs the backend at the edge.</p>
+      <p class="fade-up delay-3">This is the platform I wish had existed when I started modding.</p>
+    </div>
+
+    <!-- Features -->
+    <h2 class="section-heading fade-up">Key features</h2>
+    <div class="features-grid">
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-card-title">AI Coding Assistant</div>
+        <p>Powered by the Claude API. It knows the modding APIs for each supported game and helps you write correct, idiomatic mod code — fast.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-card-title">Cross-game support</div>
+        <p>Minecraft, Skyrim, Cyberpunk 2077, Terraria, and more. One platform, consistent workflow across every game you want to mod.</p>
+      </div>
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-card-title">Browser-based editor</div>
+        <p>No local setup. Open modrift.dev, sign in, and build. Your mods live in the cloud and sync across devices.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-card-title">Cloudflare-powered backend</div>
+        <p>Cloudflare Workers and Pages keep everything fast and at the edge. Neon DB handles persistence. Clerk manages auth end-to-end.</p>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div style="margin: 60px 0" class="fade-up">
+      <span class="section-label">// TECH STACK</span>
+      <div class="tags" style="margin-top: 16px">
+        <span class="tag">React</span>
+        <span class="tag">Cloudflare Pages</span>
+        <span class="tag">Cloudflare Workers</span>
+        <span class="tag">Neon DB</span>
+        <span class="tag">Clerk</span>
+        <span class="tag">Alby</span>
+        <span class="tag">Claude API</span>
+        <span class="tag">TypeScript</span>
+      </div>
+    </div>
+
+    <!-- Related -->
+    <div class="related-section fade-up">
+      <span class="section-label">// RELATED PROJECTS</span>
+      <div class="related-links">
+        <a href="rift.html" class="related-link">→ Rift Loader</a>
+        <a href="the-watcher.html" class="related-link">→ The Watcher</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">Yahia Bouabid — Built from scratch, shipped with passion. © 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:yahiabouabid@gmail.com">Email</a>
+        <a href="https://modrift.dev" target="_blank" rel="noopener noreferrer">modrift.dev</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Snake Agent — Yahia Bouabid</title>
+  <meta name="description" content="AI Snake Agent — a snake that learned from every mistake until it didn't make any." />
+  <meta property="og:title" content="AI Snake Agent — Yahia Bouabid" />
+  <meta property="og:description" content="A snake that learned from every mistake until it didn't make any." />
+  <meta property="og:url" content="https://olusenbg.github.io/Olusen_Bg/projects/ai-snake.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23080810'/><text y='.9em' font-size='60' font-family='sans-serif' font-weight='900' fill='%237c3aed' x='8'>YB</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="nav-logo"><span>YB</span></a>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../projects/">Projects</a></li>
+      <li><a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../">Home</a>
+  <a href="../projects/">Projects</a>
+  <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a href="../#contact">Contact</a>
+</div>
+
+<!-- PROJECT HERO -->
+<div class="project-hero">
+  <div class="project-hero-bg"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div style="margin-bottom:20px" class="fade-up">
+      <a href="../projects/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-family:'JetBrains Mono',monospace;transition:color 0.2s" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">← All Projects</a>
+    </div>
+    <span class="badge badge-completed fade-up">● Completed — Summer 2024</span>
+    <h1 class="project-hero-title fade-up delay-1">AI Snake Agent</h1>
+    <p class="project-hero-tagline fade-up delay-2">A snake that learned from every mistake until it didn't make any.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap" class="fade-up delay-3">
+      <span class="btn btn-secondary" style="cursor:default;opacity:0.6">Local Project</span>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <!-- Description -->
+    <div class="desc-section">
+      <h2 class="fade-up">Teaching a snake to think</h2>
+      <p class="fade-up delay-1">Built in the summer before high school. The concept was simple: create a Python agent that could play Snake, and let it learn through trial and error until it got good. The implementation was anything but simple for someone exploring machine learning for the first time.</p>
+      <p class="fade-up delay-2">The agent starts knowing nothing. It collides with walls, runs into itself, misses food that's right next to it. But with every game, it accumulates experience. Reward signals tell it what worked and what didn't. Gradually, game by game, the snake gets smarter. It learns to avoid walls. It learns to chase food. Eventually, it stops making the mistakes it made a thousand games ago.</p>
+      <p class="fade-up delay-3">This was my first hands-on experience with reinforcement learning concepts — reward systems, state representation, algorithm-driven behavior. Less about the math, more about the ideas behind why it works.</p>
+    </div>
+
+    <!-- How it learns -->
+    <h2 class="section-heading fade-up">How the agent improves</h2>
+    <div class="features-grid">
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-card-title">State representation</div>
+        <p>The agent perceives its environment: where the walls are, where the food is, where its own body is. State is the input that drives decisions.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-card-title">Reward signal</div>
+        <p>Eating food is rewarded. Dying is penalized. The agent learns to maximize reward over time — simple rules, complex emergent behavior.</p>
+      </div>
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-card-title">Trial and error at scale</div>
+        <p>The agent plays hundreds of games. Early games are chaotic. Over time, patterns emerge. Good moves get reinforced. Bad moves get pruned.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-card-title">Convergence</div>
+        <p>Eventually, the agent's behavior converges to something that actually works — consistent food collection, wall avoidance, self-preservation.</p>
+      </div>
+    </div>
+
+    <!-- Context -->
+    <div style="padding:40px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);margin:60px 0;" class="fade-up">
+      <span class="section-label">// CONTEXT</span>
+      <p style="margin-top:16px;font-size:15px;line-height:1.8;color:rgba(240,240,248,0.75)">Built in Summer 2024, before starting high school. This was the last project from what I think of as the "building for myself" phase — before Arvex Games, before modrift, before the work that shipped publicly. The AI Snake Agent was pure exploration. No audience, no deployment target, just the satisfaction of watching a dumb agent get smarter over time.</p>
+    </div>
+
+    <!-- Tech Stack -->
+    <div style="margin: 60px 0" class="fade-up">
+      <span class="section-label">// TECH STACK</span>
+      <div class="tags" style="margin-top: 16px">
+        <span class="tag">Python</span>
+        <span class="tag">Reinforcement Learning</span>
+        <span class="tag">Reward systems</span>
+        <span class="tag">State representation</span>
+        <span class="tag">Trial and error</span>
+      </div>
+    </div>
+
+    <!-- Related -->
+    <div class="related-section fade-up">
+      <span class="section-label">// RELATED PROJECTS</span>
+      <div class="related-links">
+        <a href="unity-games.html" class="related-link">→ Unity Projects</a>
+        <a href="minecraft-mod.html" class="related-link">→ More Curse Enchantments</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">Yahia Bouabid — Built from scratch, shipped with passion. © 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:yahiabouabid@gmail.com">Email</a>
+        <a href="https://modrift.dev" target="_blank" rel="noopener noreferrer">modrift.dev</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

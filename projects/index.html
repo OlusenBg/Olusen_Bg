@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Yahia Bouabid</title>
+  <meta name="description" content="All projects by Yahia Bouabid — games, mods, platforms, and tools." />
+  <meta property="og:title" content="Projects — Yahia Bouabid" />
+  <meta property="og:description" content="All projects by Yahia Bouabid — games, mods, platforms, and tools." />
+  <meta property="og:url" content="https://olusenbg.github.io/Olusen_Bg/projects/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23080810'/><text y='.9em' font-size='60' font-family='sans-serif' font-weight='900' fill='%237c3aed' x='8'>YB</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="nav-logo"><span>YB</span></a>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../projects/">Projects</a></li>
+      <li><a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../">Home</a>
+  <a href="../projects/">Projects</a>
+  <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a href="../#contact">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div style="padding: 160px 0 60px; background: var(--bg-surface); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <span class="section-label fade-up">// ALL PROJECTS</span>
+    <h1 style="font-size: clamp(40px, 7vw, 80px); font-family: 'Syne', sans-serif; font-weight: 800; letter-spacing: -0.04em; line-height: 1;" class="fade-up delay-1">Everything<br>I've built.</h1>
+    <p style="color: var(--text-muted); font-size: 17px; margin-top: 20px; max-width: 500px;" class="fade-up delay-2">8 projects across game dev, mod tooling, web platforms, and AI. None of them were built by someone who knew what they were doing at the start.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs fade-up">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="active">Active</button>
+      <button class="filter-tab" data-filter="discontinued">Discontinued</button>
+      <button class="filter-tab" data-filter="gamedev">Game Dev</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="all-projects-grid">
+
+      <a href="modrift.html" class="project-card fade-up" data-category="active platform">
+        <div class="project-card-header">
+          <span class="project-name">modrift</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <p class="project-desc">Cross-game mod development platform. Build mods for any game in the browser. AI-assisted, Cloudflare-powered.</p>
+        <div class="tags" style="margin-bottom: 16px">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Cloudflare</span>
+          <span class="tag">Claude API</span>
+          <span class="tag">Neon DB</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="badge badge-active">● Active</span>
+          <span class="mono" style="font-size:12px;color:var(--text-muted)">2025–present</span>
+        </div>
+      </a>
+
+      <a href="rift.html" class="project-card fade-up delay-1" data-category="active gamedev platform">
+        <div class="project-card-header">
+          <span class="project-name">Rift Loader</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <p class="project-desc">Custom Minecraft mod loader. Feature-level fault isolation — one broken feature doesn't crash your whole mod.</p>
+        <div class="tags" style="margin-bottom: 16px">
+          <span class="tag">Java</span>
+          <span class="tag">Gradle</span>
+          <span class="tag">Minecraft</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="badge badge-beta">● Beta</span>
+          <span class="mono" style="font-size:12px;color:var(--text-muted)">2025–present</span>
+        </div>
+      </a>
+
+      <a href="the-watcher.html" class="project-card fade-up delay-2" data-category="active gamedev">
+        <div class="project-card-header">
+          <span class="project-name">The Watcher</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <p class="project-desc">Psychological horror Minecraft mod. Profiles player behavior over 100 days and generates personalized, escalating horror.</p>
+        <div class="tags" style="margin-bottom: 16px">
+          <span class="tag">Java</span>
+          <span class="tag">Rift API</span>
+          <span class="tag">Minecraft</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="badge badge-dev">● In Development</span>
+          <span class="mono" style="font-size:12px;color:var(--text-muted)">2026</span>
+        </div>
+      </a>
+
+      <a href="arvex-games.html" class="project-card fade-up" data-category="discontinued platform">
+        <div class="project-card-header">
+          <span class="project-name">Arvex Games</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <p class="project-desc">Ad-free web gaming platform. Virtual economies, social features, game submission system — built from zero web knowledge.</p>
+        <div class="tags" style="margin-bottom: 16px">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Cloudflare</span>
+          <span class="tag">Netlify</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="badge badge-discontinued">● Discontinued</span>
+          <span class="mono" style="font-size:12px;color:var(--text-muted)">2025</span>
+        </div>
+      </a>
+
+      <a href="alloy-editor.html" class="project-card fade-up delay-1" data-category="active tool">
+        <div class="project-card-header">
+          <span class="project-name">Alloy Editor</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <p class="project-desc">Purpose-built code editor for FTC robotics. Android Studio is bloated for robotics — so I built something that isn't.</p>
+        <div class="tags" style="margin-bottom: 16px">
+          <span class="tag">IDE</span>
+          <span class="tag">FTC</span>
+          <span class="tag">Robotics</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="badge badge-active">● Active</span>
+          <span class="mono" style="font-size:12px;color:var(--text-muted)">2025–present</span>
+        </div>
+      </a>
+
+      <a href="minecraft-mod.html" class="project-card fade-up delay-2" data-category="active gamedev">
+        <div class="project-card-header">
+          <span class="project-name">More Curse Enchantments</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <p class="project-desc">My first real Minecraft mod. Java, IntelliJ, and a lot of trial and error. Published on CurseForge.</p>
+        <div class="tags" style="margin-bottom: 16px">
+          <span class="tag">Java</span>
+          <span class="tag">IntelliJ</span>
+          <span class="tag">CurseForge</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="badge badge-published">● Published</span>
+          <span class="mono" style="font-size:12px;color:var(--text-muted)">2024</span>
+        </div>
+      </a>
+
+      <a href="unity-games.html" class="project-card fade-up" data-category="active gamedev">
+        <div class="project-card-header">
+          <span class="project-name">Unity Projects</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <p class="project-desc">Dozens of 2D and 3D game prototypes in Unity with C#. Physics systems, mechanics, level design. Started at age 10.</p>
+        <div class="tags" style="margin-bottom: 16px">
+          <span class="tag">C#</span>
+          <span class="tag">Unity</span>
+          <span class="tag">2D / 3D</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="badge badge-ongoing">● Ongoing</span>
+          <span class="mono" style="font-size:12px;color:var(--text-muted)">2022–present</span>
+        </div>
+      </a>
+
+      <a href="ai-snake.html" class="project-card fade-up delay-1" data-category="active gamedev">
+        <div class="project-card-header">
+          <span class="project-name">AI Snake Agent</span>
+          <span class="project-arrow">↗</span>
+        </div>
+        <p class="project-desc">A Python AI agent that learned to play Snake from scratch. Reward systems, trial and error, and a snake that eventually didn't miss.</p>
+        <div class="tags" style="margin-bottom: 16px">
+          <span class="tag">Python</span>
+          <span class="tag">ML</span>
+          <span class="tag">RL</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="badge badge-completed">● Completed</span>
+          <span class="mono" style="font-size:12px;color:var(--text-muted)">Summer 2024</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">Yahia Bouabid — Built from scratch, shipped with passion. © 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:yahiabouabid@gmail.com">Email</a>
+        <a href="https://modrift.dev" target="_blank" rel="noopener noreferrer">modrift.dev</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

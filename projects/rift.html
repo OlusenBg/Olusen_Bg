@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rift Loader — Yahia Bouabid</title>
+  <meta name="description" content="Rift — the Minecraft mod loader that doesn't punish you for someone else's mistake." />
+  <meta property="og:title" content="Rift Loader — Yahia Bouabid" />
+  <meta property="og:description" content="The mod loader that doesn't punish you for someone else's mistake." />
+  <meta property="og:url" content="https://olusenbg.github.io/Olusen_Bg/projects/rift.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23080810'/><text y='.9em' font-size='60' font-family='sans-serif' font-weight='900' fill='%237c3aed' x='8'>YB</text></svg>" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../" class="nav-logo"><span>YB</span></a>
+    <ul class="nav-links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../projects/">Projects</a></li>
+      <li><a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a href="../">Home</a>
+  <a href="../projects/">Projects</a>
+  <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a href="../#contact">Contact</a>
+</div>
+
+<!-- PROJECT HERO -->
+<div class="project-hero">
+  <div class="project-hero-bg"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <div style="margin-bottom:20px" class="fade-up">
+      <a href="../projects/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-family:'JetBrains Mono',monospace;transition:color 0.2s" onmouseover="this.style.color='var(--accent-primary)'" onmouseout="this.style.color='var(--text-muted)'">← All Projects</a>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px" class="fade-up">
+      <span class="badge badge-beta">● Beta — Released May 14, 2026</span>
+      <span class="badge" style="background:rgba(124,58,237,0.1);color:var(--accent-primary);border-color:rgba(124,58,237,0.25);font-size:11px">MINECRAFT MOD LOADER</span>
+    </div>
+    <h1 class="project-hero-title fade-up delay-1">Rift</h1>
+    <p class="project-hero-tagline fade-up delay-2">The mod loader that doesn't punish you for someone else's mistake.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap" class="fade-up delay-3">
+      <a href="https://rift.modrift.dev" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download Rift ↗</a>
+      <a href="https://github.com/OlusenBg/Rift" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub ↗</a>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+
+    <!-- The Core Idea -->
+    <div class="desc-section">
+      <h2 class="fade-up">The problem with mod loaders</h2>
+      <p class="fade-up delay-1">Every Minecraft mod loader works the same way: mods are loaded as monoliths. If one feature in one mod throws an exception, the whole thing crashes. You open Minecraft, get a crash report, and spend an hour binary-searching which of your 40 mods is the culprit.</p>
+      <p class="fade-up delay-2">Rift changes the architecture. Instead of loading mods as single units, Rift loads each mod's <em>features</em> independently. If one feature breaks, only that feature stops. The rest of the mod keeps running. You keep playing.</p>
+      <p class="fade-up delay-3">The second core innovation: version agnosticism. Mods written against the Rift API work across Minecraft versions without rewrites. Write once, run everywhere Rift runs. This is also part of the modrift ecosystem — Rift is the runtime layer that modrift-built mods deploy to.</p>
+    </div>
+
+    <!-- Key Innovations -->
+    <h2 class="section-heading fade-up">Key innovations</h2>
+    <div class="features-grid">
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-card-title">Feature-level fault isolation</div>
+        <p>Every mod feature is loaded as an isolated unit. One feature crashes? It fails gracefully. The rest of the mod — and every other mod — keeps running without interruption.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-card-title">Version-agnostic mod API</div>
+        <p>The Rift API abstracts away Minecraft version specifics. Mods written for Rift work across versions. No rewrites, no compatibility matrices, no waiting for loader updates.</p>
+      </div>
+      <div class="feature-card fade-up delay-1">
+        <div class="feature-card-title">Open source (MIT)</div>
+        <p>Fully open source under the MIT license. The architecture is transparent — read it, fork it, contribute. Built in public because that's how trust is earned.</p>
+      </div>
+      <div class="feature-card fade-up delay-2">
+        <div class="feature-card-title">modrift ecosystem</div>
+        <p>Rift is the deployment target for mods built on modrift.dev. Build in the browser, ship to Rift. The two platforms are designed to work together end-to-end.</p>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div style="margin: 60px 0" class="fade-up">
+      <span class="section-label">// TECH STACK</span>
+      <div class="tags" style="margin-top: 16px">
+        <span class="tag">Java</span>
+        <span class="tag">Gradle</span>
+        <span class="tag">Minecraft Mappings</span>
+        <span class="tag">Fabric reference</span>
+        <span class="tag">IntelliJ IDEA</span>
+        <span class="tag">MIT License</span>
+      </div>
+    </div>
+
+    <!-- Related -->
+    <div class="related-section fade-up">
+      <span class="section-label">// RELATED PROJECTS</span>
+      <div class="related-links">
+        <a href="modrift.html" class="related-link">→ modrift</a>
+        <a href="the-watcher.html" class="related-link">→ The Watcher</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">Yahia Bouabid — Built from scratch, shipped with passion. © 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/OlusenBg" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:yahiabouabid@gmail.com">Email</a>
+        <a href="https://modrift.dev" target="_blank" rel="noopener noreferrer">modrift.dev</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
