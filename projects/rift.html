@@ -64,9 +64,9 @@
     <!-- The Core Idea -->
     <div class="desc-section">
       <h2 class="fade-up">The problem with mod loaders</h2>
-      <p class="fade-up delay-1">Every Minecraft mod loader works the same way: mods are loaded as monoliths. If one feature in one mod throws an exception, the whole thing crashes. You open Minecraft, get a crash report, and spend an hour binary-searching which of your 40 mods is the culprit.</p>
-      <p class="fade-up delay-2">Rift changes the architecture. Instead of loading mods as single units, Rift loads each mod's <em>features</em> independently. If one feature breaks, only that feature stops. The rest of the mod keeps running. You keep playing.</p>
-      <p class="fade-up delay-3">The second core innovation: version agnosticism. Mods written against the Rift API work across Minecraft versions without rewrites. Write once, run everywhere Rift runs. This is also part of the modrift ecosystem — Rift is the runtime layer that modrift-built mods deploy to.</p>
+      <p class="fade-up delay-1">Every Minecraft mod loader loads mods as single units. If anything inside a mod throws an exception, the whole thing crashes. You get a crash report and spend time figuring out which of your mods is responsible.</p>
+      <p class="fade-up delay-2">Rift loads each mod's features independently. If one feature breaks, only that feature stops — the rest of the mod keeps running. It's still beta, and there's plenty to work on, but the core idea holds up.</p>
+      <p class="fade-up delay-3">The Rift API also abstracts away Minecraft version specifics, so mods don't need to be rewritten for each update. And it's the runtime that modrift-built mods target — the two projects are built to work together.</p>
     </div>
 
     <!-- Key Innovations -->
